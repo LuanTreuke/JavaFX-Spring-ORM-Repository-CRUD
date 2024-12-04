@@ -8,7 +8,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 import java.io.IOException;
 
-public class SpringInitializer extends Application {
+public class   SpringInitializer extends Application {
 
     private ConfigurableApplicationContext applicationContext;
 

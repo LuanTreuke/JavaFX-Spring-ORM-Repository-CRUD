@@ -1,9 +1,6 @@
 package com.example.demo.controllers;
 
-import com.example.demo.telas.TelaAlunos;
-import com.example.demo.telas.TelaEditarAluno;
-import com.example.demo.telas.TelaExcluirAluno;
-import com.example.demo.telas.TelaNovoAluno;
+import com.example.demo.telas.*;
 import javafx.fxml.FXML;
 import org.springframework.stereotype.Controller;
 
@@ -15,14 +12,28 @@ public class TelaInicialController {
     private TelaExcluirAluno telaExcluirAluno;
     private TelaEditarAluno telaEditarAluno;
 
+    private TelaProf telaProf;
+    private TelaNovoProf telaNovoProf;
+    private TelaExcluirProf telaExcluirProf;
+    private TelaEditarProf telaEditarProf;
+
     public TelaInicialController(TelaAlunos telaAlunos,
                                  TelaNovoAluno telaNovoAluno,
                                  TelaExcluirAluno telaExcluirAluno,
-                                 TelaEditarAluno telaEditarAluno) {
+                                 TelaEditarAluno telaEditarAluno,
+                                 TelaProf telaProf,
+                                 TelaNovoProf telaNovoProf,
+                                 TelaExcluirProf telaExcluirProf,
+                                 TelaEditarProf telaEditarProf) {
         this.telaAlunos = telaAlunos;
         this.telaNovoAluno = telaNovoAluno;
         this.telaExcluirAluno = telaExcluirAluno;
         this.telaEditarAluno = telaEditarAluno;
+
+        this.telaProf = telaProf;
+        this.telaNovoProf = telaNovoProf;
+        this.telaExcluirProf = telaExcluirProf;
+        this.telaEditarProf = telaEditarProf;
     }
 
     @FXML
@@ -43,6 +54,26 @@ public class TelaInicialController {
     @FXML
     protected void onEditarAlunoButtonClick(){
         telaEditarAluno.abrir();
+    }
+
+    @FXML
+    protected void onAbrirProfessoresButtonClick() {
+        telaProf.abrir();
+    }
+
+    @FXML
+    protected void onNovoProfessorButtonClick(){
+        telaNovoProf.abrir();
+    }
+
+    @FXML
+    protected void onExcluirProfessorButtonClick(){
+        telaExcluirProf.abrir();
+    }
+
+    @FXML
+    protected void onEditarProfessorButtonClick(){
+        telaEditarProf.abrir();
     }
 
 }

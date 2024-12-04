@@ -5,6 +5,7 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.demo.controllers.TelaInicialController">
   <padding>
@@ -13,9 +14,63 @@
 
   <Label text="Cadastro Escolar" style="-fx-font-size: 20px;"/>
 
-  <Button text="Abrir Alunos" onAction="#onAbrirAlunosButtonClick"/>
-  <Button text="Novo Aluno" onAction="#onNovoAlunoButtonClick"/>
-  <Button text="Editar Aluno" onAction="#onEditarAlunoButtonClick"/>
-  <Button text="Excluir Aluno" onAction="#onExcluirAlunoButtonClick"/>
+  <HBox>
+    <HBox>
+      <padding>
+        <Insets left="16.0" right="40.0"/>
+      </padding>
+      <Label text="Alunos" style="-fx-font-size: 15px;"/>
+    </HBox>
+      <Label text="Professores" style="-fx-font-size: 15px;"/>
+    </HBox>
+
+  <HBox>
+    <HBox>
+      <padding>
+        <Insets right="20.0"/>
+      </padding>
+      <Button text="Abrir Alunos" onAction="#onAbrirAlunosButtonClick" style="-fx-pref-width: 80; -fx-font-size: 10; -fx-pref-height: 20"/>
+    </HBox>
+    <Button text="Abrir Professores" onAction="#onAbrirProfessoresButtonClick" style="-fx-pref-width: 80; -fx-font-size: 9; -fx-pref-height: 21"/>
+  </HBox>
+
+  <HBox>
+    <HBox>
+      <padding>
+        <Insets right="20.0"/>
+      </padding>
+      <Button text="Novo Aluno" onAction="#onNovoAlunoButtonClick" style="-fx-pref-width: 80; -fx-font-size: 10; -fx-pref-height: 20"/>
+    </HBox>
+    <Button text="Novo Professor" onAction="#onNovoProfessorButtonClick" style="-fx-pref-width: 80; -fx-font-size: 9; -fx-pref-height: 21"/>
+  </HBox>
+
+  <HBox>
+    <HBox>
+      <padding>
+        <Insets right="20.0"/>
+      </padding>
+      <Button text="Editar Aluno" onAction="#onEditarAlunoButtonClick" style="-fx-pref-width: 80; -fx-font-size: 10; -fx-pref-height: 20"/>
+    </HBox>
+    <Button text="Editar Professor" onAction="#onEditarProfessorButtonClick" style="-fx-pref-width: 80; -fx-font-size: 9; -fx-pref-height: 21"/>
+  </HBox>
+
+  <HBox>
+    <HBox>
+      <padding>
+        <Insets right="20.0"/>
+      </padding>
+      <Button text="Excluir Aluno" onAction="#onExcluirAlunoButtonClick" style="-fx-pref-width: 80; -fx-font-size: 10; -fx-pref-height: 20"/>
+    </HBox>
+    <Button text="Excluir Professor" onAction="#onExcluirProfessorButtonClick" style="-fx-pref-width: 80; -fx-font-size: 9; -fx-pref-height: 21"/>
+  </HBox>
+
+
+
+
+
+
+
+
+
 
 </VBox>

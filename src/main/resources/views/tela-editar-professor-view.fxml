@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo.controllers.TelaEditarProfessorController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+  </padding>
+
+  <Label text="Editar Professor" style="-fx-font-size: 20px;"/>
+
+  <Label text="Informe o id do professor que deseja editar:"/>
+    <TextField fx:id="idProfessorTextField" promptText="Id do professor" />
+
+  <Button text="Buscar" onAction="#onBuscarProfessorButtonClick" />
+
+  <Label text="Nome:"/>
+  <TextField fx:id="nomeProfessorTextField" promptText="Nome do professor" />
+
+  <Label text="Email:"/>
+  <TextField fx:id="emailProfessorTextField" promptText="Email do professor" />
+
+  <Button text="Salvar" onAction="#onSalvarProfessorButtonClick" />
+
+  <Label fx:id="mensagemProfessorLabel" />
+
+</VBox>

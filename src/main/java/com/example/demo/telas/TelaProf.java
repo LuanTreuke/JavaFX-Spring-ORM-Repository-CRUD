@@ -4,16 +4,16 @@ import com.example.demo.utils.AbridorJanela;
 import org.springframework.stereotype.Component;
 
 @Component
-public class  TelaAlunos {
+public class  TelaProf {
 
     AbridorJanela abridorJanela;
 
-    public TelaAlunos(AbridorJanela abridorJanela) {
+    public TelaProf(AbridorJanela abridorJanela) {
         this.abridorJanela = abridorJanela;
     }
 
     public void abrir(){
-        abridorJanela.abrirNovaJanela("/views/tela-alunos-view.fxml", "Alunos", 700, 500);
+        abridorJanela.abrirNovaJanela("/views/tela-professores-view.fxml", "Professores", 700, 500);
     }
 
 }
